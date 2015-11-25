@@ -73,6 +73,7 @@ public class ElizaServerTest {
 			public void onOpen(Session session, EndpointConfig config) {
 
 				session.getAsyncRemote().sendText("I think The Force Awakens is gonna be great.");
+
 				session.addMessageHandler(new MessageHandler.Whole<String>() {
 
 					@Override
